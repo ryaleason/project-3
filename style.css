@@ -1,0 +1,416 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bar{
+    width: 3px;
+    height: 100%;
+    background-color: #905d1a;
+    position: fixed;
+    right: 0;
+    top: 0;
+    animation: scroll ;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll {
+    0%{
+        height: 0;
+
+    }
+
+    50%{
+        height: 50%;
+        background-color: white;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.banner {
+    background-image: url(src/img/yassine-khalfalli--ttmrVJlZrU-unsplash.jpg);
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+}
+
+.logo h1 {
+    font-size: 30px;
+}
+
+.navbargap ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbargap {
+    background-color: rgba(0, 0, 0, 0.382);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbargap a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 15vh;
+}
+
+.cntentgap h1, p{
+    width: 50%;
+}
+
+.cntentgap h1 {
+    font-size: 40px;
+}
+
+.cntentgap p {
+    font-size: 20px;
+}
+
+.cntentgap li {
+    font-size: 15px;
+}
+
+.cntentgap h1 span {
+    color: #905d1a;
+}
+
+.cntentgap a {
+    background-color: #905d1a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 550;
+}
+
+.space {
+    min-height: 20px;
+}
+
+.cntentgap li {
+    margin: 10px 0 ;
+}
+
+/* about */
+.about {
+    background-color: black;
+    color: white;
+}
+
+.abt-container h1 {
+    text-align-last: center;
+    font-size: 40px;
+    padding: 10px;
+    padding-top: 20vh;
+}
+
+.abt-content h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.abt-container h2 span {
+    color: #905d1a;
+}
+
+.abt-content h4 {
+    display: block;
+    font-size: 15px;
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.abtimg img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .abt-container h1 {
+        font-size: 30px;
+        padding-top: 10vh;
+    }
+    .abt-content h2 {
+        font-size: 18px;
+    }
+    .abt-content h4 {
+        width: 100%;
+    }
+    
+
+    .content {
+        padding-top: 25vh;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .navbargap a 
+    {
+        font-size: 10px;
+        gap: 5px;
+    }
+
+    .cntentgap h1, p{
+        width: 70%;
+    }
+
+    .abt-container h1 {
+        padding: 5px;
+        padding-top: 15vh;
+    }
+
+    .abt-content h2 {
+        font-size: 15px;
+    }
+
+    .abt-content h4 {
+        font-size: 10px;
+        width: 80%;
+    }
+
+    .about {
+        padding-bottom: 15vh;
+    }
+
+    .abtimg{
+        display : flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .abtimg-1{
+
+        width: 300px;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .abtimg-2{
+        height: 240px;
+    }
+    .abtimg-2 img{
+        width: 120px;
+        border-radius: 30px;
+    }
+    
+    .abtimg .abtimg-1 img {
+        border-radius: 30px;
+        width: 220px;
+        background-color: #905d1a;
+        padding: 0px;
+    }
+
+    /* produk */
+    .pdk{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .pdk-judul{
+        font-size: 20px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        margin-bottom: 90px;
+        border-bottom: 3px solid #905d1a;
+        padding-bottom: 14px;
+        animation: border 3s infinite;
+
+    }
+
+    @keyframes border {
+        0%{
+            width: 20px;
+        }
+        50%{
+            width: 85%;
+            border-color: white;
+        }
+        100%{
+            width: 20px;
+        }
+    }
+
+    
+
+    .pdk-content{
+        display: flex;
+        justify-content: center;
+
+        background: url(src/img/Proyek\ Baru\ 14\ [1F701AA].png) no-repeat;
+        background-size: cover;
+        width: 90%;;
+    }
+
+    .pdk-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pdk-speaker{
+        display: flex;
+        width: 500px;
+        overflow-x: scroll;
+        margin-bottom: 12px;
+    }
+    .pdk-kabel{
+        display: flex;
+        width: 500px;
+        overflow-x: scroll;
+    }
+
+    .pdk-content-1{
+        width: 30%;
+        display: block;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 12px;
+        padding-left: 30px;
+        margin: 0px 12px;
+
+    }
+
+    .pdk-content-1 h1{
+        font-size: 13px;
+        color: white;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .pdk-content-1 p{
+        font-size: 6px;
+        color: white;
+        font-weight: 400;
+        margin-bottom: 2px;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pdk-content-1 .btn button{
+        width: 45px;
+        height: 17px;
+        background-color: #905d1a;
+        color: white;
+        font-size: 6px;
+        font-weight: 700;
+        border-radius: 2px;
+        border: none;
+        box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.56);
+    }
+
+    .btn p{
+        font-size: 8px;
+        color: white;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    .pdk-content-1 h2{
+        font-size: 10px;
+        color: yellow;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .pdk-content-1 img{
+        width: 100px;
+    }
+
+    .layer-kiri{
+        width: 35%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        backdrop-filter: blur(10px);
+        left: -6px;
+        border-right: 2px solid #905d1a;
+        border-radius: 12px;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .layer-kiri-isi{
+        position: relative;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .layer-kiri h1{
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        z-index: 2;
+    }
+
+    .layer-kiri ul {
+        color: white;
+        list-style: none;
+    }
+    
+    .layer-kiri ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .layer-kiri ul li{
+        margin: 40px 0px;
+    }
+
+    
+    
+    /* produk */
+
+}
